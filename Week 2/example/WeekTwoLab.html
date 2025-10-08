@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 2 Lab</title>
+</head>
+<body>
+<h1>Button Clicker</h1>
+<h2 id="output">0</h2>
+<!--Buttons!-->
+<input type="button" id="btn" value="Click Me!">
+<input type="button" id="reset-btn" value="Reset Clicks!">
+<input type="button" id="upgrade-btn" value="Upgrade Clicks!">
+<!--Test Feild!-->
+<input type="text" name="upgrade" id="upgrade">
+<!--Lab Button-->
+<input type="button" id="multi-btn" value="Double It!">
+<!--Lab Feild-->
+<input type="text" name="multiplier" id="multiplier">
+<input type="button" id="multiplier-btn" value="Multiply It!">
+
+
+
+<script>
+    //HTML References!
+    var clickButton = document.getElementById("btn")
+    var resetButton = document.getElementById("reset-btn")
+    var upgradeClicks = document.getElementById("upgrade-btn")
+    //Lab Reference!
+    var doubleClicks = document.getElementById("multi-btn")
+    var multiplyClicks = document.getElementById("multiplier-btn")
+    var output = document.getElementById("output")
+
+    //Internal Variables
+    var clicks = 0
+    var clickByAmount = 1
+    var clickDoubler = 2
+function increment()
+{
+    //Add to clicks
+    clicks += clickByAmount
+
+    //Change the innerHTML to the current amount of clicks
+    output.innerHTML = clicks;
+}
+//assign the increment funciton to the button
+    clickButton.addEventListener("click",increment)
+
+
+function reset()
+{
+    clicks = 0
+    output.innerHTML = 0
+}
+//assign the reset function to the reset button
+resetButton.addEventListener("click",reset)
+
+function upgradeClick()
+{
+    var upgradeBox = document.getElementById("upgrade")
+    clickByAmount = Number(upgradeBox.value)
+}
+
+upgradeClicks.addEventListener("click",upgradeClick)
+
+function multiplyClicks()
+{
+    var multiplierBox = document.getElementById("multiplier")
+    clickByAmount = Number(multiplierBox.value)
+}
+
+
+
+//Lab Function
+function double()
+{
+    clicks *= clickDoubler
+    output.innerHTML = clicks
+}
+
+doubleClicks.addEventListener("click",double)
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Week 2 | Javascript!</title>
+    <meta charset="UTF-8">
+</head>
+<!--Comment In HTML-->
+<body>
+
+    <div id="jsExample">
+        <p>Shuckle</p>
+    </div>
+
+    <script>
+        //Manipulating HTML Document
+        var divContainer = document.getElementById("jsExample")
+        //Setting The Inner HTML
+        divContainer.innerHTML = "<h1>Hello</h1>"
+
+
+        //Adding Onto THe Inner HTML
+        divContainer.innerHTML += "<h2>Adding</h2>"
+
+        var hello = 2;
+
+        function addNumbers(numberOne,numberTwo)
+        {
+            console.log(numberOne + numberTwo)
+        }
+
+
+        //Funcion with a parameter
+        function alertMessage(messageToAlert)
+        {
+            addNumbers(10,26)
+            alert(messageToAlert)
+        }
+        
+            function alertMessageTwo(paramOne,paramTwo)
+        {
+            alert(paramOne + paramTwo)
+        }
+        
+        alertMessage("Hello!")
+        alertMessageTwo("hello", "hello two")
+
+        //Comment in JS
+        var test = "shuckle";
+
+
+        //if statement
+        var a = 11
+        var b = 10
+
+        if(a == b)
+{
+    console.log("A = B")
+}else console.log("A does not equal B :(")
+
+if(a > 10)
+{
+    console.log("A is greater than 10")
+}
+
+
+    //if i want to compare a string
+
+
+    //Cammel Case
+    var compareString = "Mama Mia"
+
+    if(compareString == "Mama Mia") 
+{
+    console.log("A Joke")
+}else {
+    console.log("Not A Joke")
+}
+
+
+var a = 10;
+var b = 20; 
+//addition
+console.log(a+b)
+//subtraction
+console.log(a-b)
+//multiplication
+console.log(a*b)
+
+console.log()
+
+    </script>
+</body>
+</html>
