@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ENTER NAME HERE">
+    <meta name="author" content="Aidan Leary">
     <meta name="description" content="week 3 class attribute assignment">
 
-    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/styleOfSite.css">
 
 
     <title>Aidan Leary Week 3</title>
@@ -36,20 +36,23 @@
                     <button class="buttonThing">Button</button>
                     <button class="buttonThing">Button</button>
                 </div>
+                <div><h1 id="shapeTitle">↓Shapes Are Drawn Down There↓</h1></div>
             </div>
 
             <!-- Main Content! -->
             <div id="main-content" class="border-unity">
                 <!-- Give this a background image! -->
                 <div id="pictureDiv" class="boarder-unity">
-
+                
                     <!-- SHAPES MUST GO INTO THIS DIV, ONCE DONE Shape Title can disappear -->
                     <div id="shapeContent">
-                        <h1 id="shapeTitle">Shapes Should Draw Here</h1>
+                    
+                        <canvas id="canvas" width="800" height="800" style="border: 1px solid"></canvas>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="shapes.js"></script>
 </body>
 
 </html>
