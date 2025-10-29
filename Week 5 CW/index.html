@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Class Work Stuff</title>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <canvas width="800" height="800" style="border: 1px solid black"></canvas>
+
+    <script>
+        //Array
+
+        //Array's are containers that hold a bunch of differet data
+        //               0         1         2         3        4
+        var fruits = ["apple", "tomato", "banana", "grapes", "kiwi"]
+
+        //The brackets allow us to access a specific index of the array as shown below.
+        //Prints "apple"
+        fruits[0]
+        //Prints "kiwi"
+        fruits[4]
+        //Prints "banana"
+        fruits[2]
+
+
+        //if working with an arrat, always go by the array's .length
+        for (var i = 0; i < fruits.length; i++) {
+            //"i" is accessing the specific index every increment
+            console.log(fruits[i])
+        }
+
+        //Arithmatic in the for() loop
+        var number = 50
+        for (var i = 0; i < number * 2; i++) {
+            console.log(i)
+        }
+
+        //Key Value Pairs can only be used once
+        var car1 ={
+            make: 'Honda',
+            model: 'Civic',
+            year: 2019
+        }
+
+        class Car{
+            constructor(){
+                this.make = 'A Car'
+                this.model = 'Adnkasj'
+                this.year = 0;
+            }
+
+            displayInfo(){
+                console.log(this.make + ' ' + this.model + ' ' + this.year)
+            }
+
+        }
+
+
+        var newCar = new Car()
+
+        newCar.model = 'Camero'
+        newCar.displayInfo()
+
+        var newHonda = new Car()
+        newHonda.displayInfo()
+
+
+        
+    </script>
+
+</body>
+
+</html>
